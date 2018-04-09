@@ -16,6 +16,7 @@ class NotesModel extends Connection{
      * @return {Object} Note created.
      */
     save(note, customerId){
+        console.log(note, customerId);
         var self = this;
         return new Promise((success, reject) => {
             var notesEntity = self.NotesEntity.Model;

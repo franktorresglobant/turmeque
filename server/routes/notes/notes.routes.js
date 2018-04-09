@@ -62,10 +62,11 @@ class NoteRoutes {
         /**
          * @function PUT
          * @description Update the note that matches with the query.
-         * @param {Object}
+         * @param {String} id Id of the note.
+         * @param {String} note Content of the note.
          * {
-                "note": "This is a new note",
-                "id": "5a9c6aa70099fd683b7ce0c5"
+              "id": "5a9c6aa70099fd683b7ce0c5"
+              "note": "This is a new note",
             }
          */
         app.put(ROUTES.NOTES, (req, res) => {

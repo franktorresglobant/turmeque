@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue Express Node MongoDB CRUD Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+    <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/assets/css/app.css">
+  </head>
+  <body>
+    <header id="header">
+      <v-container>
+        <v-layout row wrap>
+          <v-flex xs12 class="center-elements">
+              <v-card color="white" dark tile flat>
+                <v-card-text>
+                  <img src="src/assets/images/logo.jpg" alt="Logo" width="200">
+                  <h1 color="blue darken-1">CUSTOMNOTES</h1>
+                </v-card-text>
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </header>
+
+    <div id="app"></div>
+    <script src="bundle.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
+    <script>
+        new Vue({ el: '#header' })
+      </script>
+  </body>
+</html>

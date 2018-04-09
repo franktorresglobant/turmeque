@@ -67,6 +67,8 @@ class NotesService {
   * @returns {Object} The note just created.
   */
 function* coSave(self, note, customerId){
+    yield ValidatorService.note(note);
+    yield ValidatorService.mongoId(customerId);
     var note = yield self.NotesModel.save(note, customerId);
 
     return note;

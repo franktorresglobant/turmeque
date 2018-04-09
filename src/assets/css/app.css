@@ -1,0 +1,58 @@
+body{
+    font-family: 'Roboto';
+    color: #151515;
+}
+#header{border-top: 10px solid #475777}
+#header h1{
+    color: #475777;    
+}
+.center-elements{
+    text-align: center;
+}
+#app th{color: #475777;}
+#app .customers td{
+    font-weight: 500;
+    border-bottom: 2px solid #eaeaea;
+}
+#app .customer-description{
+    padding: 15px;
+}
+.customer-info .card__text{text-align: left;}
+.customer-info .card{
+    box-shadow: none;
+}
+.content-notes{
+    overflow: auto;
+    max-height: 600px;
+    text-align: left;
+}
+.content-notes .add-button{
+    margin-left: 0px;
+    margin-bottom: 40px;
+}
+.notes{
+    position: relative;
+    padding-bottom: 10px;
+}
+.notes .card__text{
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    margin-bottom: 20px;
+    padding: 15px !important;
+    color: #FFF;
+}
+.notes span{
+    position: absolute;
+    right: 0px;
+    top: -15px;
+    font-size: 10px;
+}
+.dialog__container nav .toolbar__title{
+    color: #FFF;
+}
+.dialog__container .card--tile{background-color: #FFF;}
+.input-group__details:before{background: rgba(0,0,0,.42);}
+.status-customer .menu__content{
+    top: 0px !important;
+    left: 0px !important;
+    background: #FFF;
+}

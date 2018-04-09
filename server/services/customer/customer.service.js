@@ -3,6 +3,7 @@
 var co = require('co');
 var CustomerModel = require('../../model/customer/customer.model');
 var ValidatorService = require('../validator/validator.service');
+var objectId = require('mongodb').ObjectID;
 
 class CustomerService {
     constructor(){
@@ -14,9 +15,23 @@ class CustomerService {
      * @description Get all the customers in the collection.
      * @returns {Array}
     */
-    getAll(){
+   getCustomer(id){
         var self = this;
-        return co(coGetAll(self))
+        return co(coGetCustomer(self, id))
+            .then(data => data)
+            .catch(error => {
+                throw error;
+            });
+    }
+
+    /**
+     * @function getDetail
+     * @param {String} id Id of the customer
+     * @returns {Object} Objecte that represent the customer.
+     */
+    getDetail(id){
+        var self = this;
+        return co(coGetDetail(self))
             .then(data => data)
             .catch(error => {
                 throw error;
@@ -49,10 +64,15 @@ class CustomerService {
  * @yields {Array} Documents in the Customer collection.
  * @returns {Array} Documents in the Customer collection.
 */
-function* coGetAll(self){
-    var customers = yield self.customerModel.getAll();
+function* coGetCustomer(self, id){
+    if(id){
+        yield ValidatorService.mongoId(id);
+        var customer = yield self.customerModel.getDetail(objectId(id));
+    }else{
+        var customer = yield self.customerModel.getAll();
+    }
 
-    return customers;
+    return customer;
 }
 
 /**

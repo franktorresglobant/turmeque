@@ -30,3 +30,10 @@ npm run start-client
 
 ```
 npm run start-server
+```
+
+There is a bulk action if you want to have some customer information to start
+
+```
+npm run bulk
+```

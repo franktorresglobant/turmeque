@@ -19,7 +19,7 @@ class CustomerRoute {
         
         /**
          * @async
-         * @function GET Get all the documents from the customer collection
+         * @function GET Get the documents from the customer collection
          * @returns {Array} An array of objects if there are documents in the collections or an empty array.
          * [
          *      {
@@ -34,8 +34,8 @@ class CustomerRoute {
          *      }
          *  ]
          */
-        app.get(ROUTES.HOME, (req, res) => {
-            this.CustomerService.getAll()
+        app.get(ROUTES.CUSTOMER, (req, res) => {
+            this.CustomerService.getCustomer(req.query.id)
                 .then((data) => {
                     return res.send(data);
                 }, (err) => {
@@ -43,6 +43,7 @@ class CustomerRoute {
                 });
         });
 
+        
         app.put(ROUTES.CUSTOMER, (req, res) => {
             this.CustomerService.changeStatus(req.body.id, req.body.status)
                 .then((data) => {
