@@ -9,15 +9,16 @@ Vue.use(VueAxios, axios);
 
 import App from './App.vue';
 import ShowCustomers from './components/ShowCustomers.vue';
+import Auth from './components/Auth.vue'
 
 import Vuetify from 'vuetify'
 Vue.use(Vuetify)
 
 const routes = [
     {
-        name: 'ShowCustomers',
+        name: 'Auth',
         path: '/',
-        component: ShowCustomers
+        component: Auth
     }
 ];
 

@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>Vue Express Node MongoDB CRUD Application</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="google-signin-client_id" content="502255920374-h22785k43laiv5uiotnh6e3bhc29opfh.apps.googleusercontent.com">
+    <script src="https://smartlock.google.com/client" async defer></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://apis.google.com/js/api:client.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
     <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
     <link rel="stylesheet" href="src/assets/css/app.css">
@@ -13,23 +17,23 @@
       <v-container>
         <v-layout row wrap>
           <v-flex xs12 class="center-elements">
-              <v-card color="white" dark tile flat>
-                <v-card-text>
-                  <img src="src/assets/images/logo.jpg" alt="Logo" width="200">
-                  <h1 color="blue darken-1">CUSTOMNOTES</h1>
-                </v-card-text>
+            <v-card color="white" dark tile flat>
+              <v-card-text>
+                <img src="src/assets/images/logo.jpg" alt="Logo" width="200">
+                <h1 color="blue darken-1">Turmeque</h1>
+              </v-card-text>
             </v-card>
           </v-flex>
         </v-layout>
       </v-container>
     </header>
-
+    
     <div id="app"></div>
     <script src="bundle.js"></script>
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
     <script>
-        new Vue({ el: '#header' })
-      </script>
+        new Vue({ el: '#app' })
+    </script>
   </body>
 </html>
