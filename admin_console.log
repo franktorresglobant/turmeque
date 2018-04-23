@@ -317,3 +317,9 @@
 {"level":"info","message":"Server running at http://0.0.0.0:3000/","timestamp":"2018-04-10T16:14:19.702Z"}
 {"level":"info","message":"Mongo Connection Success to localhost:27017/customer_notes","timestamp":"2018-04-10T16:14:19.724Z"}
 {"level":"info","message":"Current Database customer_notes","timestamp":"2018-04-10T16:14:19.725Z"}
+{"level":"info","message":"Server running at http://0.0.0.0:3000/","timestamp":"2018-04-23T23:06:30.606Z"}
+{"level":"info","message":"Mongo Connection Success to localhost:27017/customer_notes","timestamp":"2018-04-23T23:06:30.632Z"}
+{"level":"info","message":"Current Database customer_notes","timestamp":"2018-04-23T23:06:30.633Z"}
+{"level":"info","message":"Server running at http://0.0.0.0:3000/","timestamp":"2018-04-23T23:23:41.997Z"}
+{"level":"info","message":"Mongo Connection Success to localhost:27017/customer_notes","timestamp":"2018-04-23T23:23:42.022Z"}
+{"level":"info","message":"Current Database customer_notes","timestamp":"2018-04-23T23:23:42.022Z"}
